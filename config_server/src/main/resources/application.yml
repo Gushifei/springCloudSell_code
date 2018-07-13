@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:zhaoliangsuper/springCloudSell.git
+#          username: lly835@163.com
+#          password: T#27h*E$cg@%}j
+#          basedir: F:/imagesServer/springcloudsellconfig/
+#docker run -d --hostname my-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3.7.7-management  服务器执行后通过docker启动
+  rabbitmq:
+    host: 180.76.172.198
+    port: 5672
+    username: guest
+    password: guest
+#      http://localhost:8080/order-a.yml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8761.com:8761//eureka/
+#暴露bus相关的接口  通知队列刷新config文件命令: http://hx4cag.natappfree.cc/actuator/bus-refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8080
+encrypt:
+  key: zhaoliang

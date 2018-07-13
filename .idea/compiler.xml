@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="8761" />
+        <module name="8800" />
+        <module name="8881" />
+        <module name="8891" />
+        <module name="product_client" />
+        <module name="product_common" />
+        <module name="product_server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="8881" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

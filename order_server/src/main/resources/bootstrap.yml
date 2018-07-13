@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+server:
+  port: 8891
+#他就会通过CONFIG（config服务的名字）找到：order-dev.yml文件
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8761.com:8761/eureka/
