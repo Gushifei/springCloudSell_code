@@ -1,5 +1,6 @@
 package com.imooc.order.service.impl;
 
+import com.imooc.base.utils.KeyUtil;
 import com.imooc.order.dataobject.OrderDetail;
 import com.imooc.order.dataobject.OrderMaster;
 import com.imooc.order.dto.OrderDTO;
@@ -8,7 +9,6 @@ import com.imooc.order.enums.PayStatusEnum;
 import com.imooc.order.repository.OrderDetailRepository;
 import com.imooc.order.repository.OrderMasterRepository;
 import com.imooc.order.service.OrderService;
-import com.imooc.order.utils.KeyUtil;
 import com.imooc.product.client.ProductClient;
 import com.imooc.product.common.DecreaseStockInput;
 import com.imooc.product.common.ProductInfoOutput;

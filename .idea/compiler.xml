@@ -9,9 +9,11 @@
         <module name="8080" />
         <module name="8761" />
         <module name="8800" />
+        <module name="8871" />
         <module name="8881" />
         <module name="8891" />
         <module name="9000" />
+        <module name="base" />
         <module name="product_client" />
         <module name="product_common" />
         <module name="product_server" />

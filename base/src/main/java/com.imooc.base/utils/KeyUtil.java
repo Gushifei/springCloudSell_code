@@ -1,4 +1,4 @@
-package com.imooc.order.utils;
+package com.imooc.base.utils;
 
 import java.util.Random;
 

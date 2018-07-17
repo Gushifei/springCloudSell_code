@@ -1,13 +1,13 @@
 package com.imooc.order.controller;
 
-import com.imooc.order.VO.ResultVO;
+import com.imooc.base.utils.ResultVOUtil;
+import com.imooc.base.vo.ResultVO;
 import com.imooc.order.converter.OrderForm2OrderDTOConverter;
 import com.imooc.order.dto.OrderDTO;
 import com.imooc.order.enums.ResultEnum;
 import com.imooc.order.exception.OrderException;
 import com.imooc.order.form.OrderForm;
 import com.imooc.order.service.OrderService;
-import com.imooc.order.utils.ResultVOUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
@@ -41,7 +41,7 @@ public class OrderController {
      */
     @PostMapping("/create")
     public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm,
-                           BindingResult bindingResult) {
+                                                BindingResult bindingResult) {
         if (bindingResult.hasErrors()){
             log.error("【创建订单】参数不正确, orderForm={}", orderForm);
             throw new OrderException(ResultEnum.PARAM_ERROR.getCode(),

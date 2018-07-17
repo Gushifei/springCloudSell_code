@@ -16,6 +16,8 @@
         <module>config_server</module>
         <module>config_server</module>
         <module>api-geteway</module>
+        <module>user_server</module>
+        <module>base</module>
     </modules>
     <packaging>pom</packaging>
 
