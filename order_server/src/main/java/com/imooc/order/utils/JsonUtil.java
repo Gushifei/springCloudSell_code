@@ -1,4 +1,4 @@
-package com.imooc.product.utils;
+package com.imooc.order.utils;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;

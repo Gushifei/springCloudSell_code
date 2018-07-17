@@ -9,7 +9,7 @@ spring:
       profile: dev
 server:
   port: 8881
-#他就会通过CONFIG（config服务的名字）找到：order-dev.yml文件
+#他就会通过CONFIG（config服务的名字）找到：product-dev.yml文件
 eureka:
   client:
     service-url:

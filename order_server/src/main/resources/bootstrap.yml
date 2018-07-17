@@ -1,12 +1,25 @@
 spring:
   application:
     name: order
+  redis:  #这部分可以放到git上
+      host: 180.76.172.198
+      prot: 6379
   cloud:
     config:
       discovery:
         enabled: true
         service-id: CONFIG
       profile: dev
+    stream:  #这部分可以放到git上
+      bindings:
+        my_mq_input:      #实例名字
+          group: order    #消息分组，不管你启动多少个实例，都只会被一个实例去消费
+          destination: mqTest
+          content-type: application/json     #这样在mq管理端可以看到json格式的数据，否则会是一个加密的字符串
+        my_mq_output:     #实例名字
+          group: order    #消息分组
+          destination: mqTest
+          content-type: application/json
 server:
   port: 8891
 #他就会通过CONFIG（config服务的名字）找到：order-dev.yml文件

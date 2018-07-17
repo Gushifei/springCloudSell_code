@@ -1,0 +1,8 @@
+docker安装mq：
+docker run -d --hostname my-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3.7.7-management
+默认管理端是：
+http://180.76.172.198:15672
+guest
+guest
+装redis
+docker run -d -p 6379:6379 redis:4.0.10

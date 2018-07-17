@@ -19,7 +19,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka8761.com:8761//eureka/
+      defaultZone: http://eureka8761.com:8761/eureka/
 #暴露bus相关的接口  通知队列刷新config文件命令: http://hx4cag.natappfree.cc/actuator/bus-refresh
 management:
   endpoints:
